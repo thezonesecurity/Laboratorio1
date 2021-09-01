@@ -73,7 +73,7 @@ const person = {
    const addRoles2 = (person, na, met) => {
      const aux = {name: na, method: met};
      const people = {...person.roles, aux};
-     return Object.values(people)
+     return Object.values(people);
   };
 
    const main = () => {

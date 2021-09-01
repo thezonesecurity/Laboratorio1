@@ -58,9 +58,9 @@ const person = {
       }
     } = person;
      return location;
-   }
+   };
 
-   //DESAFIOS
+   //------------- DESAFIOS ACTIVIDAD 3 ------------------
    const addIdUser = (person, id) => {
     return { ...person, id };
    };
@@ -68,18 +68,27 @@ const person = {
    const addRoles = (person, nam, met) => {
      let rol = person.roles.push({name: nam, method: met});
      return rol;
-   }
-   
+   };
+   //SEGUNDO DESAFIO
+   const addRoles2 = (person, na, met) => {
+     const aux = {name: na, method: met};
+     const people = {...person.roles, aux};
+     return Object.values(people)
+  };
+
    const main = () => {
+    
     console.log(showPersonalInformation(person));
     console.log(showRoles(person));
     console.log(getPosition(person));
     console.log(getFirstRol(person));
     console.log(getAddress(person));
     console.log(addIdUser(person, 123456));
+    //para actividad 3
     console.log("--------Desafio 1-----------");
     console.log(addRoles(person, "user2", "get2"));
     console.log(showRoles(person));
     console.log("--------Desafio 2-----------");
+    console.log(addRoles2(person, "user3", "get3"));
    };
    export default main;

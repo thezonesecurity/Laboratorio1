@@ -5,7 +5,7 @@ import number from "./problems/actividad4";
 
 firstProblem();
 main();
-console.log("------------------Actividad 4----------------------");
+console.log("--------ACTIVIDAD 4-----------");
 number();
 
 

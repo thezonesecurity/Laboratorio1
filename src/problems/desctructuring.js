@@ -77,18 +77,20 @@ const person = {
   };
 
    const main = () => {
-    
+    console.log("--------ACTIVIDAD 2-----------");
     console.log(showPersonalInformation(person));
     console.log(showRoles(person));
     console.log(getPosition(person));
     console.log(getFirstRol(person));
     console.log(getAddress(person));
     console.log(addIdUser(person, 123456));
+
     //para actividad 3
-    console.log("--------Desafio 1-----------");
+    console.log("--------ACTIVIDAD 3-----------");
+    console.log("Desafio 1");
     console.log(addRoles(person, "user2", "get2"));
     console.log(showRoles(person));
-    console.log("--------Desafio 2-----------");
+    console.log("Desafio 2");
     console.log(addRoles2(person, "user3", "get3"));
    };
    export default main;
